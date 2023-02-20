@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4112096004237729158}
   - component: {fileID: 37748270399690645}
   m_Layer: 0
-  m_Name: Ingredient 2
+  m_Name: Spaghetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6453989, g: 0.56078434, b: 0.98039216, a: 1}
+  m_Sprite: {fileID: 21300000, guid: dd1095d400396484bbb6f4bce1892a60, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -134,7 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7d9776547795a4fb65aa685e49c76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RecipePrefab: {fileID: 8575351797118584596, guid: 4393f6753be68a647b55c96abc421536, type: 3}
+  combinations:
+  - ingredientName: Meatballs
+    resultName: Spaghetti + Meatballs
+  FoodItemName: Spaghetti
+  lastDrag: 0
 --- !u!50 &37748270399690645
 Rigidbody2D:
   serializedVersion: 4

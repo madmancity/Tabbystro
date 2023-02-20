@@ -132,12 +132,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1723698814}
     m_Modifications:
     - target: {fileID: 1183176183792919309, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: FoodItemPrefab
+      value: 
+      objectReference: {fileID: 8322462666101397283, guid: d21a94ff02e53c9429d00fa67f5d2354, type: 3}
+    - target: {fileID: 1183176183792919309, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: IngredientPrefab
       value: 
       objectReference: {fileID: 8322462666101397283, guid: 7064c4f13f4e20045828c1cdf4b42439, type: 3}
     - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f3d4562ee8c2374e94ca222f4d2d6bc, type: 3}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Color.b
-      value: 0.45882356
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Color.g
@@ -145,11 +153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Color.r
-      value: 0.5237679
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863332, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Name
-      value: UIIngredient (1)
+      value: UIIngredient (Tomato Sauce)
       objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Pivot.x
@@ -350,8 +358,8 @@ Canvas:
   m_GameObject: {fileID: 259445144}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -584,6 +592,136 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668729473}
   m_CullTransparentMesh: 1
+--- !u!1001 &682387535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1723698814}
+    m_Modifications:
+    - target: {fileID: 1183176183792919309, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: FoodItemPrefab
+      value: 
+      objectReference: {fileID: 8322462666101397283, guid: 3d49e8e82e0641a4d865d86f710b6b92, type: 3}
+    - target: {fileID: 1183176183792919309, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: IngredientPrefab
+      value: 
+      objectReference: {fileID: 8322462666101397283, guid: 7064c4f13f4e20045828c1cdf4b42439, type: 3}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 38140846cb4d1694884b76d6d401bfac, type: 3}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863332, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Name
+      value: UIIngredient (Meatballs)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+--- !u!224 &682387536 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+  m_PrefabInstance: {fileID: 682387535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &902267961
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,9 +821,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1723698814}
     m_Modifications:
+    - target: {fileID: 1183176183792919309, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: FoodItemPrefab
+      value: 
+      objectReference: {fileID: 8322462666101397283, guid: 09662ce8d1d73094e9553c7c1e477135, type: 3}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fc4cfd023bf722c47bfaaeba1842fb2a, type: 3}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715395352191863330, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863332, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Name
-      value: UIIngredient
+      value: UIIngredient (Pasta)
       objectReference: {fileID: 0}
     - target: {fileID: 8715395352191863333, guid: 8ab7ed162a795304cbed6ffe758e23b7, type: 3}
       propertyPath: m_Pivot.x
@@ -880,6 +1038,7 @@ RectTransform:
   m_Children:
   - {fileID: 1112794595}
   - {fileID: 194362957}
+  - {fileID: 682387536}
   m_Father: {fileID: 210009633}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
