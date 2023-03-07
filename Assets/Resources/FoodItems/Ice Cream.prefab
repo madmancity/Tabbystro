@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8586148961768469684}
   - component: {fileID: -4112096004237729158}
   - component: {fileID: 37748270399690645}
-  - component: {fileID: -8866102093904458829}
-  - component: {fileID: -7460580643023531691}
-  - component: {fileID: 4781089381365648011}
+  - component: {fileID: 5780036889663236649}
+  - component: {fileID: 5809962131665336396}
+  - component: {fileID: -7740202976857108245}
   m_Layer: 0
-  m_Name: Americano
+  m_Name: Ice Cream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 630b8a9de81a04c679496bb69488002d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d77800e9ad72e410eb3dad5428796d42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combinations:
-  - ingredientName: Ice
-    resultName: Iced Americano
-  FoodItemName: Americano
+  - ingredientName: Espresso
+    resultName: Affogatto
+  FoodItemName: Ice Cream
   lastDrag: 0
 --- !u!50 &37748270399690645
 Rigidbody2D:
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &-8866102093904458829
+--- !u!61 &5780036889663236649
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,7 +178,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &-7460580643023531691
+--- !u!114 &5809962131665336396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c307782dc268d44a95d6b4512efec9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4781089381365648011
+--- !u!114 &-7740202976857108245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
