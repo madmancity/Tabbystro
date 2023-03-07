@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelControls : MonoBehaviour
 {
@@ -23,10 +24,12 @@ public class LevelControls : MonoBehaviour
         if (timeRemaining < 0 || mistakes >= 3)
         {
             // End level with failure status
+            SceneManager.LoadScene("Lose");
         }
         else if (completedOrders >= 5)
         {
             // End level with success status
+            SceneManager.LoadScene("Win");
         }
     }
 }

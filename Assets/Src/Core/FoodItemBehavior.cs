@@ -44,6 +44,7 @@ public class FoodItemBehavior : MonoBehaviour
                                 return;
                             }
                         }
+                        ++LevelControls.mistakes;
                         result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/Mush"));
                         result.transform.position = transform.position;
                         Destroy(collision.gameObject);

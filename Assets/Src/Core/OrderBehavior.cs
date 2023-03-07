@@ -21,12 +21,14 @@ public class OrderBehavior : MonoBehaviour
         if (foodItemName.Equals(order.orderName))
         {
             orderField.text = correctResponses[Random.Range(0, correctResponses.Length)];
+            ++LevelControls.completedOrders;
             StartCoroutine(waitToResetText(orders[Random.Range(0, orders.Length)]));
             order = null;
         }
         else
         {
             orderField.text = incorrectResponses[Random.Range(0, incorrectResponses.Length)];
+            ++LevelControls.mistakes;
             StartCoroutine(waitToResetText(order));
             order = null;
         }
