@@ -1,0 +1,24 @@
+Pierre2, "Bonjour, oui.",0
+Pierre, "I’m Chef Pierre oui.",0 
+Pierre2, "Mew must be the one, oui?",0 
+Pierre2, "Meow’m meant to teach you to run a cafe, oui!",0
+Pierre, "Meow promise Meow has lots of experience.",0 
+Pierre2, "So trust in Meow, oui.",0
+Pierre, "...",0
+Pierre2, "Mew’ll call this place Tabbystro, oui?",0
+Pierre2, "Great, oui!",0
+Pierre, "Let’s get started, oui!",0
+Pierre, "This is mewr workspace oui.",1
+Pierre, "Mewr ingredients are located at the bottom oui.",2
+Pierre, "Use them by dragging them into the open space on the board oui.",3
+Pierre, "Mew can combine two ingredients to make something new oui.",4
+Pierre, "But beware, combining two ingredients that should not go together will create a disastrous dish called muck oui.",5
+Pierre, "Get three muck and mew’ll have to close down due to health violations oui.",6
+Pierre, "Mew'll have to watch out for the timer too, and try not to mess up the orders oui.",7
+Pierre, "A combination of three wrong orders or mush will get mew fired, oui.",0
+Pierre, "If mew serve 5 customers correctly, Meow'll hire you full time oui.",0
+Pierre, "At the top of the workspace is where mew’ll receive customer orders oui.",8
+Pierre, "Customers aren’t very specific here in Purris, so mew’ll have to take it upon mewrself to find the hidden clues in their words oui.",0
+Pierre, "If mew forget Meow teachings, Meow'll be here to give another tutorial oui.",-1
+Pierre, "Good luck oui.",0
+Pierre, "",-2
