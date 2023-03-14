@@ -10,11 +10,11 @@ public class FoodItemBehavior : MonoBehaviour
     [SerializeField]
     public Combination[] combinations;
     public string FoodItemName;
+    public AudioSource combine;
 
     [HideInInspector]
     public float lastDrag;
     private bool isPlaced = false; // will become true once the object is placed into the game world. This is a workaround for the way OnMouseDrag works when an object is first created
-    
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -37,6 +37,7 @@ public class FoodItemBehavior : MonoBehaviour
                         {
                             if (combination.ingredientName.Equals(otherName))
                             {
+                                combine.Play();
                                 result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/" + combination.resultName));
                                 result.transform.position = transform.position;
                                 Destroy(collision.gameObject);

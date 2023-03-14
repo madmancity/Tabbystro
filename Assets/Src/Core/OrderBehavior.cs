@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OrderBehavior : MonoBehaviour
 {
     public TMP_Text orderField;
+    public Image customer;
     private Order order;
 
     // Start is called before the first frame update
@@ -39,6 +41,19 @@ public class OrderBehavior : MonoBehaviour
         yield return new WaitForSeconds(3);
         orderField.text = order.orderText;
         this.order = order;
+        int i = Random.Range(0, 3);
+        switch (i)
+        {
+            case 0:
+                customer.sprite = Resources.Load<Sprite>("Sprites/Boris");
+                break;
+            case 1:
+                customer.sprite = Resources.Load<Sprite>("Sprites/Dolphin");
+                break;
+            case 2:
+                customer.sprite = Resources.Load<Sprite>("Sprites/Terry");
+                break;
+        }
     }
 
     private Order[] orders = {
