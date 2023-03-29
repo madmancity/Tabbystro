@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimerBehavior : MonoBehaviour
 {
-    public TMP_Text timerField;
+    Image RingBar;
+    public float maxTime = 21f;
+    float timeLeft;
 
+    void Start () {
+        RingBar = GetComponent<Image> ();
+        timeLeft = maxTime;
+    } 
     // Update is called once per frame
     void Update()
     {
-        int minutes = (int)(LevelControls.timeRemaining / 60);
-        int seconds = (int)(LevelControls.timeRemaining % 60);
-        if (minutes < 0 || seconds < 0)
-        {
-            minutes = 0;
-            seconds = 0;
-        }
-        timerField.text = $"{minutes}:{(seconds < 10 ? $"0{seconds}" : $"{seconds}")}";
+    if (timeLeft > 0) {
+        timeLeft -= Time.deltaTime;
+        RingBar.fillAmount = timeLeft / maxTime;
+    } else {
+        Time.timeScale = 0;
+    }
+   // if (timeLeft == );
     }
 }
