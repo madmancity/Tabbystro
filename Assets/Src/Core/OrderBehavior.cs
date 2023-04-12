@@ -48,10 +48,10 @@ public class OrderBehavior : MonoBehaviour
                 customer.sprite = Resources.Load<Sprite>("Sprites/Boris");
                 break;
             case 1:
-                customer.sprite = Resources.Load<Sprite>("Sprites/Dolphin");
+                customer.sprite = Resources.Load<Sprite>("Sprites/Gabriella Happy");
                 break;
             case 2:
-                customer.sprite = Resources.Load<Sprite>("Sprites/Terry");
+                customer.sprite = Resources.Load<Sprite>("Sprites/Terry Happy Profile");
                 break;
         }
     }
@@ -61,14 +61,14 @@ public class OrderBehavior : MonoBehaviour
         new Order("I just want a simple hot coffee.", "Americano"),
         new Order("I want an iced coffee, hold the milk.", "Iced Americano"),
         new Order("I just want a simple iced coffee.", "Iced Americano"),
-        new Order("I’m craving a hot coffee with milk.", "Cafe au Lait"),
+        new Order("Iï¿½m craving a hot coffee with milk.", "Cafe au Lait"),
         new Order("I want a hot drink without water.", "Cafe au Lait"),
         new Order("I really want an iced coffee with milk.", "Iced Cafe au Lait"),
         new Order("I want an iced drink without water.", "Iced Cafe au Lait"),
         new Order("I want a frozen treat.", "Ice Cream"),
-        new Order("I’ll take a scoop of something cold.", "Ice Cream"),
-        new Order("I’m craving a dessert coffee.", "Affogatto"),
-        new Order("I’ll take a coffee but with something extra cold in it.", "Affogatto")
+        new Order("Iï¿½ll take a scoop of something cold.", "Ice Cream"),
+        new Order("Iï¿½m craving a dessert coffee.", "Affogatto"),
+        new Order("Iï¿½ll take a coffee but with something extra cold in it.", "Affogatto")
     };
 
     private string[] correctResponses = {

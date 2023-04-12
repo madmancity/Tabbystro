@@ -7,7 +7,11 @@ public class TimerBehavior : MonoBehaviour
 {
     Image RingBar;
     public float maxTime = 21f;
+    public float halfTime = 14f;
+    public float crunchTime = 7f;
     float timeLeft;
+    public Image Customer;
+
 
     void Start () {
         RingBar = GetComponent<Image> ();
@@ -22,6 +26,13 @@ public class TimerBehavior : MonoBehaviour
     } else {
         Time.timeScale = 0;
     }
-   // if (timeLeft == );
+    if (timeLeft <= halfTime){
+        RingBar.color = Color.yellow;
+        Customer.sprite = Resources.Load<Sprite>("Sprites/Gabriella Profile");
     }
+    if (timeLeft <= crunchTime){
+        RingBar.color = Color.red;
+        Customer.sprite = Resources.Load<Sprite>("Sprites/Boris");
+    } 
+    } 
 }
