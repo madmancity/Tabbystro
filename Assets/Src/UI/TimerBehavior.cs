@@ -11,8 +11,6 @@ public class TimerBehavior : MonoBehaviour
     public float crunchTime = 7f;
     float timeLeft;
     public Image Customer;
-
-
     void Start () {
         RingBar = GetComponent<Image> ();
         timeLeft = maxTime;
@@ -34,5 +32,8 @@ public class TimerBehavior : MonoBehaviour
         RingBar.color = Color.red;
         Customer.sprite = Resources.Load<Sprite>("Sprites/Boris");
     } 
+    if (timeLeft <= 0f) {
+        LevelControls.mistakes++;
+    }
     } 
 }
