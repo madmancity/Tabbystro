@@ -5,7 +5,6 @@ using UnityEngine;
 public class RecipeBook : MonoBehaviour
 {
     public GameObject OpenBook;
-   
     public void ClickBook()
     {
         if (OpenBook != null)
