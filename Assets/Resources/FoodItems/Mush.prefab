@@ -105,6 +105,7 @@ MonoBehaviour:
   combinations: []
   FoodItemName: Mush
   combine: {fileID: -3737008683886505183, guid: 09662ce8d1d73094e9553c7c1e477135, type: 3}
+  combinationPrefab: {fileID: 0}
   lastDrag: 0
 --- !u!50 &37748270399690645
 Rigidbody2D:

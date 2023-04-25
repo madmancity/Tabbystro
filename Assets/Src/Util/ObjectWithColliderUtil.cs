@@ -13,5 +13,7 @@ public enum ObjectTypes
 {
     FoodItem,
     IngredientsView,
-    OrderView
+    OrderView,
+    CombinationItem,
+    Machine
 }

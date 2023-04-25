@@ -107,6 +107,7 @@ MonoBehaviour:
     resultName: Iced Cafe au Lait
   FoodItemName: Cafe au Lait
   combine: {fileID: -3737008683886505183, guid: 09662ce8d1d73094e9553c7c1e477135, type: 3}
+  combinationPrefab: {fileID: 5246166018016519040, guid: ae7a25e9c26d8c545b511ceac152c50e, type: 3}
   lastDrag: 0
 --- !u!50 &37748270399690645
 Rigidbody2D:

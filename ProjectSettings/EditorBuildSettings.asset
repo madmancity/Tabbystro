@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menu/Scenes/TutOpen.unity
     guid: 64b3c3137df96894ea8e4b91ebf12bbd
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: f32ebe6956f82bc42bc671fd46369e39
+  - enabled: 1
+    path: Assets/Scenes/MainLevel1.unity
+    guid: 954150a943ec6a44b922e61102f86c93
+  - enabled: 1
+    path: Assets/Scenes/MainLevel2.unity
+    guid: b7fc9e3d1977715499a307bde3d4cc7d
   m_configObjects: {}
