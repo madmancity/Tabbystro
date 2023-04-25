@@ -16,7 +16,16 @@ public class HeartsBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (localMistakes != LevelControls.mistakes)
+        if (LevelControls.mistakes == -1)
+        {
+            localMistakes = 0;
+            LevelControls.mistakes = 0;
+            foreach (GameObject life in lives)
+            {
+                life.SetActive(true);
+            }
+        }
+        else if (localMistakes != LevelControls.mistakes)
         {
             localMistakes = LevelControls.mistakes;
             lives[3 - localMistakes].SetActive(false);

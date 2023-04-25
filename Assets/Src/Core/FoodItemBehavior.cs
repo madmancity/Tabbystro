@@ -8,9 +8,9 @@ using UnityEngine.EventSystems;
 public class FoodItemBehavior : MonoBehaviour
 {
     [SerializeField]
-    public Combination[] combinations;
     public string FoodItemName;
     public AudioSource combine;
+    public GameObject combinationPrefab;
 
     [HideInInspector]
     public float lastDrag;
@@ -20,37 +20,68 @@ public class FoodItemBehavior : MonoBehaviour
     {
         if (!Input.GetMouseButton(0))
         {
+            CombinationBehavior b;
+            SpriteRenderer r;
             switch (collision.GetComponent<ObjectWithColliderUtil>().objectType)
             {
                 case ObjectTypes.IngredientsView:
                     break;
                 case ObjectTypes.OrderView:
-                    collision.GetComponent<OrderBehavior>().orderUp(FoodItemName);
+                    try
+                    {
+                        collision.GetComponent<OrderPanelBehavior>().orderUp(FoodItemName);
+                    } catch { }
+                    break;
+                case ObjectTypes.CombinationItem:
+                    b = collision.GetComponent<CombinationBehavior>();
+                    if (b.i > 3) break;
+                    b.foodItems[b.i] = new GameObject(FoodItemName);
+                    b.foodItems[b.i].transform.localScale = new Vector2(0.25f, 0.25f);
+                    r = b.foodItems[b.i].AddComponent<SpriteRenderer>();
+                    r.sprite = Resources.Load<Sprite>($"Sprites/{FoodItemName}");
+                    b.i++;
                     break;
                 case ObjectTypes.FoodItem:
                     if (lastDrag > collision.GetComponent<FoodItemBehavior>().lastDrag)
                     {
+                        GameObject combo = Instantiate(combinationPrefab);
+                        b = combo.GetComponent<CombinationBehavior>();
+                        b.foodItems[b.i] = new GameObject(FoodItemName);
+                        b.foodItems[b.i].transform.localScale = new Vector2(0.25f, 0.25f);
+                        r = b.foodItems[b.i].AddComponent<SpriteRenderer>();
+                        r.sprite = Resources.Load<Sprite>($"Sprites/{FoodItemName}");
+                        b.i++;
                         string otherName = collision.GetComponent<FoodItemBehavior>().FoodItemName;
-                        if (FoodItemName.Equals("Mush") && otherName.Equals("Mush")) return;
-                        GameObject result;
-                        foreach (Combination combination in combinations)
-                        {
-                            if (combination.ingredientName.Equals(otherName))
-                            {
-                                combine.Play();
-                                result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/" + combination.resultName));
-                                result.transform.position = transform.position;
-                                Destroy(collision.gameObject);
-                                Destroy(gameObject);
-                                return;
-                            }
-                        }
-                        ++LevelControls.mistakes;
-                        result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/Mush"));
-                        result.transform.position = transform.position;
-                        Destroy(collision.gameObject);
+                        b.foodItems[b.i] = new GameObject(otherName);
+                        b.foodItems[b.i].transform.localScale = new Vector2(0.25f, 0.25f);
+                        r = b.foodItems[b.i].AddComponent<SpriteRenderer>();
+                        r.sprite = Resources.Load<Sprite>($"Sprites/{otherName}");
+                        b.i++;
+                        combo.transform.position = transform.position;
                     }
                     break;
+                    //if (lastDrag > collision.GetComponent<FoodItemBehavior>().lastDrag)
+                    //{
+                    //    string otherName = collision.GetComponent<FoodItemBehavior>().FoodItemName;
+                    //    if (FoodItemName.Equals("Mush") && otherName.Equals("Mush")) return;
+                    //    GameObject result;
+                    //    foreach (Combination combination in combinations)
+                    //    {
+                    //        if (combination.ingredientName.Equals(otherName))
+                    //        {
+                    //            combine.Play();
+                    //            result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/" + combination.resultName));
+                    //            result.transform.position = transform.position;
+                    //            Destroy(collision.gameObject);
+                    //            Destroy(gameObject);
+                    //            return;
+                    //        }
+                    //    }
+                    //    ++LevelControls.mistakes;
+                    //    result = GameObject.Instantiate(Resources.Load<GameObject>("FoodItems/Mush"));
+                    //    result.transform.position = transform.position;
+                    //    Destroy(collision.gameObject);
+                    //}
             }
             Destroy(gameObject);
         }
@@ -75,7 +106,6 @@ public class FoodItemBehavior : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (!FoodItemName.Equals("Mush"))
-            Drag();
+        Drag();
     }
 }
