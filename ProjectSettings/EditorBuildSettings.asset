@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLevel2.unity
     guid: b7fc9e3d1977715499a307bde3d4cc7d
+  - enabled: 1
+    path: Assets/Scenes/Freeplay.unity
+    guid: fbe2261ec25f570458cc2ed31a03bcf3
   m_configObjects: {}
