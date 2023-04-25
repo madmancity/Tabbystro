@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 55253405}
   - component: {fileID: 55253404}
   - component: {fileID: 55253403}
+  - component: {fileID: 55253408}
   m_Layer: 0
   m_Name: volume
   m_TagString: Untagged
@@ -386,7 +387,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 55253408}
         m_TargetAssemblyTypeName: MuteButton, Assembly-CSharp
         m_MethodName: mute
         m_Mode: 1
@@ -532,6 +533,18 @@ RectTransform:
   m_AnchoredPosition: {x: 5.984735, y: 3.4449313}
   m_SizeDelta: {x: 5.12, y: 5.12}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &55253408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55253402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57cb65136e5daa42b339bd5f22d3d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &232019124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1215,7 @@ GameObject:
   - component: {fileID: 1021550566}
   - component: {fileID: 1021550565}
   - component: {fileID: 1021550564}
+  - component: {fileID: 1021550568}
   m_Layer: 0
   m_Name: no-sound
   m_TagString: Untagged
@@ -1303,7 +1317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1021550568}
         m_TargetAssemblyTypeName: MuteButton, Assembly-CSharp
         m_MethodName: unmute
         m_Mode: 1
@@ -1399,6 +1413,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1021550568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021550562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57cb65136e5daa42b339bd5f22d3d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1144376246
 GameObject:
   m_ObjectHideFlags: 0
