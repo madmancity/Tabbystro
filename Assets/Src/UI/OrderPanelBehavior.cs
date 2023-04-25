@@ -37,6 +37,11 @@ public class OrderPanelBehavior : MonoBehaviour
         {
             maxTime = 20 - (0.125f * (LevelControls.maxTime - LevelControls.timeRemaining));
         }
+        else if (SceneManager.GetActiveScene().name.Equals("Freeplay"))
+        {
+            maxTime = 6000000;
+            ringBar.enabled = false;
+        }
         newArrival();
         ringBar.color = Color.green;
         halfTime = maxTime * 0.666f;

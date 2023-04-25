@@ -13,6 +13,8 @@ public class LevelControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mistakes = 0;
+        completedOrders = 0;
         if (SceneManager.GetActiveScene().name.Equals("MainLevel"))
         {
             maxTime = 60;
@@ -25,9 +27,12 @@ public class LevelControls : MonoBehaviour
         {
             maxTime = 120;
         }
+        else if (SceneManager.GetActiveScene().name.Equals("Freeplay"))
+        {
+            maxTime = 6000000;
+            mistakes = -500000;
+        }
         timeRemaining = maxTime;
-        mistakes = 0;
-        completedOrders = 0;
     }
 
     // Update is called once per frame
